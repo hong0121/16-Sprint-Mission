@@ -1,0 +1,133 @@
+/* header */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 12.5rem;
+}
+
+.header__login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--text-color-light);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+/* main */
+.hero,
+.bottom-banner {
+  background-color: var(--banner-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.hero__image,
+.bottom-banner__image {
+  padding-top: 10rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.hero__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 7.75rem;
+  margin-top: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-banner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+.source {
+  color: var(--text-color-light);
+}
+
+/* @media screen and (max-width: 767px) {
+  .header__nav {
+    padding: 1rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__content {
+    padding-top: 4rem;
+  }
+
+  .hero__image {
+    max-width: 80%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .hero__link {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-item {
+    display: flex;
+    width: 100%;
+  }
+
+  h2 {
+    white-space: nowrap;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+} */
