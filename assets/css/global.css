@@ -45,18 +45,6 @@ span {
   color: var(--text-color-light);
 }
 
-article {
-  display: flex;
-  align-items: center;
-  margin: 8rem 0;
-  gap: 5%;
-  white-space: nowrap;
-}
-
-article:nth-child(2) {
-  text-align: right;
-}
-
 footer {
   background-color: var(--background-color-dark);
   display: flex;

@@ -23,7 +23,7 @@
 
 /* main */
 .hero,
-.bottom-banner {
+.closing-banner {
   background-color: var(--banner-color);
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@
 }
 
 .hero__image,
-.bottom-banner__image {
+.closing-banner__image {
   padding-top: 10rem;
 }
 
@@ -61,12 +61,21 @@
   align-items: center;
 }
 
-.search-banner {
+.feature-section__item {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
+  margin: 8rem 0;
+  gap: 5%;
+  white-space: nowrap;
 }
 
-.content-item {
+.feature-section__item--reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.feature-section__content {
   display: flex;
   flex-direction: column;
 }
