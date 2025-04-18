@@ -34,7 +34,10 @@
             alt="판다 마켓의 상징적인 판다 얼굴 로고"
           />
         </a>
-        <a class="header__login-link" href="/login" aria-label="로그인으로 이동"
+        <a
+          class="header__login-link"
+          href="/login.html"
+          aria-label="로그인으로 이동"
           >로그인</a
         >
       </nav>
@@ -43,7 +46,7 @@
       <section class="hero">
         <div class="wrapper">
           <div class="hero__content">
-            <h2>일상의 모든 물건을<br />거래해 보세요</h2>
+            <h2 class="hero__title">일상의 모든 물건을<br />거래해 보세요</h2>
             <a class="hero__link" href="/items" aria-label="상품 목록 구경하기">
               구경하러 가기
             </a>
@@ -62,9 +65,13 @@
             alt="녹색 티셔츠 위에 떠 있는 커다란 분홍색 하트 판다 마켓의 인기 상품 섹션을 강조하여 사용자를 유도하는 홍보 배너 역할을 합니다."
           />
           <div class="feature-section__content">
-            <h3>Hot item</h3>
-            <h2>인기 상품을<br />확인해 보세요</h2>
-            <p>가장 HOT한 중고거래 물품을<br />판다 마켓에서 확인해 보세요</p>
+            <h3 class="feature-section__title">Hot item</h3>
+            <h2 class="feature-section__headline">
+              인기 상품을<br />확인해 보세요
+            </h2>
+            <p class="feature-section__description">
+              가장 HOT한 중고거래 물품을<br />판다 마켓에서 확인해 보세요
+            </p>
           </div>
         </article>
         <article class="feature-section__item feature-section__item--reverse">
@@ -74,9 +81,13 @@
             loading="lazy"
           />
           <div class="feature-section__content">
-            <h3>Search</h3>
-            <h2>구매를 원하는<br />상품을 검색하세요</h2>
-            <p>구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요</p>
+            <h3 class="feature-section__title">Search</h3>
+            <h2 class="feature-section__headline">
+              구매를 원하는<br />상품을 검색하세요
+            </h2>
+            <p class="feature-section__description">
+              구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
+            </p>
           </div>
         </article>
         <article class="feature-section__item">
@@ -86,15 +97,21 @@
             loading="lazy"
           />
           <div class="feature-section__content">
-            <h3>Register</h3>
-            <h2>판매를 원하는<br />상품을 등록하세요</h2>
-            <p>어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요</p>
+            <h3 class="feature-section__title">Register</h3>
+            <h2 class="feature-section__headline">
+              판매를 원하는<br />상품을 등록하세요
+            </h2>
+            <p class="feature-section__description">
+              어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
+            </p>
           </div>
         </article>
       </section>
       <section class="closing-banner">
         <div class="wrapper">
-          <h2>믿을수 있는<br />판다마켓 중고 거래</h2>
+          <h2 class="closing-banner__headline">
+            믿을수 있는<br />판다마켓 중고 거래
+          </h2>
           <img
             class="closing-banner__image"
             src="./assets/images/banners/main-banner-footer.png"
@@ -104,16 +121,18 @@
         </div>
       </section>
     </main>
-    <footer>
-      <span class="source">© Codeit - 2024</span>
-      <ul>
-        <li>
+    <footer class="footer">
+      <span class="footer__source">© Codeit - 2024</span>
+      <ul class="footer__nav">
+        <li class="footer__nav-item">
           <a href="/privacy" aria-label="정책 페이지로 이동">Privacy Policy</a>
         </li>
-        <li><a href="/faq" aria-label="faq페이지로 이동">FAQ</a></li>
+        <li class="footer__nav-item">
+          <a href="/faq" aria-label="faq페이지로 이동">FAQ</a>
+        </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="footer__social">
+        <li class="footer__social-item">
           <a
             href="https://www.facebook.com"
             aria-label="facebook으로 이동"
@@ -122,7 +141,7 @@
             ><img src="./assets/images/icons/icon_facebook.svg" alt="Facebook"
           /></a>
         </li>
-        <li>
+        <li class="footer__social-item">
           <a
             href="https://www.twitter.com"
             aria-label="twitter로 이동"
@@ -131,7 +150,7 @@
             ><img src="./assets/images/icons/icon_twitter.svg" alt="Twitter"
           /></a>
         </li>
-        <li>
+        <li class="footer__social-item">
           <a
             href="https://www.youtube.com"
             aria-label="youtube로 이동"
@@ -140,7 +159,7 @@
             ><img src="./assets/images/icons/icon_youtube.svg" alt="YouTube"
           /></a>
         </li>
-        <li>
+        <li class="footer__social-item">
           <a
             href="https://www.instagram.com"
             aria-label="instagram으로 이동"

@@ -1,10 +1,25 @@
 :root {
+  --primary-light-color: #e6f2ff;
   --primary-color: #3692ff;
   --primary-hover-color: #1967d6;
   --primary-active-color: #1251aa;
   --background-color-dark: #111827;
   --banner-color: #cfe5ff;
 
-  --text-primary: #374151;
-  --text-color-light: #f3f4f6;
+  --gray900: #111827;
+  --gray800: #1f2937;
+  --gray700: #374151;
+  --gray600: #4b5563;
+  --gray500: #6b7280;
+  --gray400: #9ca3af;
+  --gray200: #e5e7eb;
+  --gray100: #f3f4f6;
+  --gray50: #f9fafb;
+
+  --font-size-small: 12px;
+  --font-size-base: 16px;
+  --font-size-medium: 18px;
+  --font-size-large: 24px;
+  --font-size-xlarge: 32px;
+  --font-size-xxlarge: 48px;
 }
