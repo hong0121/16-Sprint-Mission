@@ -23,16 +23,22 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/pages/login-signup.css" />
   </head>
   <body>
     <main class="login-container">
       <header class="header__login">
         <a href="/" aria-label="홈으로 이동">
-          <img
-            src="/assets/images/logos/panda-logo-lg.png"
-            alt="판다 마켓의 상징적인 판다 얼굴 로고"
-          />
+          <picture class="header__login-image">
+            <source
+              srcset="/assets/images/logos/panda-logo.png"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/assets/images/logos/panda-logo-lg.png"
+              alt="판다 마켓의 상징적인 판다 얼굴 로고"
+            />
+          </picture>
         </a>
       </header>
       <form class="form__login">
