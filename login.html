@@ -23,58 +23,74 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/pages/login-signup.css" />
+    <link rel="stylesheet" href="./assets/css/pages/auth.css" />
   </head>
   <body>
     <main class="login-container">
       <header class="header__login">
         <a href="/" aria-label="홈으로 이동">
-          <picture class="header__login-image">
-            <source
-              srcset="/assets/images/logos/panda-logo.png"
-              media="(max-width: 767px)"
-            />
-            <img
-              src="/assets/images/logos/panda-logo-lg.png"
-              alt="판다 마켓의 상징적인 판다 얼굴 로고"
-            />
-          </picture>
+          <img
+            class="logo-image"
+            srcset="
+            /assets/images/logos/panda-logo.png 200w  
+            /assets/images/logos/panda-logo-lg.png 400w,
+            "
+            sizes="(max-width: 767px) 200px, 400px"
+            src="/assets/images/logos/panda-logo-lg.png"
+            alt="판다 마켓의 상징적인 판다 얼굴 로고"
+          />
         </a>
       </header>
       <form class="form__login">
-        <label class="form__label-email" for="email">이메일</label>
-        <input
-          class="form__input-email"
-          type="email"
-          id="email"
-          name="email"
-          autocomplete="email"
-          placeholder="이메일"
-          required
-        />
-        <label class="form__label-password" for="password">비밀번호</label>
-        <div class="form__input-wrapper">
+        <div class="form__field">
+          <label class="form__label-email" for="email">이메일</label>
           <input
-            class="form__input-password"
-            type="password"
-            id="password"
-            name="password"
-            autocomplete="current-password"
-            placeholder="비밀번호"
+            class="form__input-email"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="이메일"
             required
           />
-          <button
-            type="button"
-            class="form__toggle-password"
-            aria-label="비밀번호 숨김/표시 버튼"
-          >
-            <img
-              src="/assets/images/icons/icon_visibilityOn.svg"
-              alt="비밀번호 숨김/표시 버튼"
-            />
-          </button>
+          <div id="emailError" class="error-message"></div>
         </div>
-        <button class="form__input-button" type="submit">로그인</button>
+        <div class="form__field">
+          <label class="form__label-password" for="password">비밀번호</label>
+          <div class="form__input-wrapper">
+            <input
+              class="form__input-password"
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="비밀번호"
+              required
+            />
+            <button
+              type="button"
+              id="togglePassword"
+              class="form__toggle-password"
+              aria-label="비밀번호 숨김/표시 버튼"
+            >
+              <img
+                id="eyeIcon"
+                src="/assets/images/icons/icon_visibilityOff.svg"
+                alt="비밀번호 숨김/표시 버튼"
+              />
+            </button>
+          </div>
+          <div id="passwordError" class="error-message"></div>
+        </div>
+
+        <button
+          id="loginButton"
+          class="form__input-button"
+          type="submit"
+          disabled
+        >
+          로그인
+        </button>
       </form>
       <section class="quick-login">
         <p class="quick-login__title">간편 로그인하기</p>
@@ -102,10 +118,12 @@
             class="footer__link"
             href="/signup.html"
             aria-label="회원가입으로 이동"
-            >회원가입</a
           >
+            회원가입
+          </a>
         </p>
       </footer>
     </main>
+    <script type="module" src="./scripts/login.js"></script>
   </body>
 </html>
