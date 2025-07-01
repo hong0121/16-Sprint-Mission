@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <meta
+      name="description"
+      content="판다마켓 - 일상의 모든 물건을 거래하는 중고거래 플랫폼"
+    />
+    <meta property="og:title" content="판다마켓" />
+    <meta
+      property="og:description"
+      content="일상의 모든 물건을 거래하는 중고거래 플랫폼"
+    />
+    <link rel="icon" href="assets/images/logos/panda_logo_m.png" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/variables.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/pages/auth.css" />
+  </head>
+  <body>
+    <main class="signup-container">
+      <header class="header__signup">
+        <a href="/" aria-label="홈으로 이동">
+          <img
+            src="/assets/images/logos/panda-logo-lg.png"
+            alt="판다 마켓의 상징적인 판다 얼굴 로고"
+          />
+        </a>
+      </header>
+      <form class="form__signup">
+        <div class="form__field">
+          <label class="form__label-email" for="email">이메일</label>
+          <input
+            class="form__input-email"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="이메일"
+            required
+          />
+          <div id="emailError" class="error-message"></div>
+        </div>
+        <div class="form__field">
+          <label class="form__label-nickname" for="nickname">닉네임</label>
+          <input
+            class="form__input-nickname"
+            type="nickname"
+            id="nickname"
+            name="nickname"
+            autocomplete="nickname"
+            placeholder="닉네임"
+          />
+        </div>
+        <div class="form__field">
+          <label class="form__label-password" for="password">비밀번호</label>
+          <div class="form__input-wrapper">
+            <input
+              class="form__input-password"
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="비밀번호"
+              required
+            />
+            <button
+              type="button"
+              id="togglePassword"
+              class="form__toggle-password"
+              aria-label="비밀번호 보기 토글"
+            >
+              <img
+                id="eyeIcon"
+                src="/assets/images/icons/icon_visibilityOff.svg"
+                alt="비밀번호 보기"
+              />
+            </button>
+          </div>
+          <div id="passwordError" class="error-message"></div>
+        </div>
+        <div class="form__field">
+          <label class="form__label-passwordCheck" for="passwordCheck">
+            비밀번호 확인
+          </label>
+          <div class="form__input-wrapper">
+            <input
+              class="form__input-passwordCheck"
+              type="password"
+              id="passwordCheck"
+              name="passwordCheck"
+              autocomplete="current-passwordCheck  "
+              placeholder="비밀번호 확인"
+              required
+            />
+            <button
+              type="button"
+              id="togglePasswordCheck"
+              class="form__toggle-passwordCheck"
+              aria-label="비밀번호 보기 토글"
+            >
+              <img
+                id="eyeIconCheck"
+                src="/assets/images/icons/icon_visibilityOff.svg"
+                alt="비밀번호 보기"
+              />
+            </button>
+          </div>
+          <div id="passwordCheckError" class="error-message"></div>
+        </div>
+        <button
+          id="signupButton"
+          class="form__input-button"
+          type="submit"
+          disabled
+        >
+          회원가입
+        </button>
+      </form>
+      <section class="quick-login">
+        <p class="quick-login__title">간편 로그인하기</p>
+        <div class="quick-login__buttons">
+          <a href="https://www.google.com/">
+            <img
+              src="/assets/images/icons/icon_google.png"
+              alt="google login"
+              aria-label="google로 이동"
+            />
+          </a>
+          <a href="https://www.kakaocorp.com/page/">
+            <img
+              src="/assets/images/icons/icon_kakaotalk.png"
+              alt="kakaotalk login"
+              aria-label="kakaotalk 이동"
+            />
+          </a>
+        </div>
+      </section>
+      <footer>
+        <p class="footer__title">
+          이미 회원이신가요?
+          <a
+            class="footer__link"
+            href="/login.html"
+            aria-label="회원가입으로 이동"
+          >
+            로그인
+          </a>
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="./scripts/signup.js"></script>
+  </body>
+</html>
